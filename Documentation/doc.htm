@@ -1,0 +1,1905 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Kyoskin Documentation</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-link:"Title Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-link:"Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-link:"Title Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:15.0pt;
+	margin-left:0cm;
+	border:none;
+	padding:0cm;
+	font-size:26.0pt;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-link:"Quote Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-link:"Intense Quote Char";
+	margin-top:10.0pt;
+	margin-right:46.8pt;
+	margin-bottom:14.0pt;
+	margin-left:46.8pt;
+	line-height:115%;
+	border:none;
+	padding:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.nt
+	{mso-style-name:nt;}
+span.na
+	{mso-style-name:na;}
+span.s
+	{mso-style-name:s;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-link:Title;
+	font-family:"Cambria",serif;
+	color:#17365D;
+	letter-spacing:.25pt;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-link:"Intense Quote";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-link:Quote;
+	color:black;
+	font-style:italic;}
+span.p
+	{mso-style-name:p;}
+span.lineno
+	{mso-style-name:lineno;}
+span.s2
+	{mso-style-name:s2;}
+span.mi
+	{mso-style-name:mi;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-IN>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Padding</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily add
+the padding to it. We provide mapping in Pixel and percentage.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pd-lf-0 to pd-lf-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pd-lf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pd-rt-0 to pd-rt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pd-rt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pd-tp-0 to pd-tp-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pd-tp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pd-bt-0 to pd-bt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pd-bt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pdp-lf-0 to ppd-lf-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pdp-lf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pdp-rt-0 to pdp-rt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pdp-rt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pdp-tp-0 to pdp-tp-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pdp-tp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Padding bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>pdp-bt-0 to pdp-bt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>pdp-bt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Margin</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily add
+the margin to it. We provide mapping in Pixel and percentage.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-lf-0 to mg-lf-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-lf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-rt-0 to mg-rt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-rt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-tp-0 to mg-tp-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-tp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-bt-0 to mg-bt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-bt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-lf-0 to mgd-lf-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-lf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-rt-0 to mgp-rt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-rt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-tp-0 to mgp-tp-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-tp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Margin bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-bt-0 to mgp-bt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-bt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping Back
+Margin Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-blf-0 to mg-blf-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-blf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-brt-0 to mg-brt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-brt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-btp-0 to mg-btp-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-btp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mg-bbt-0 to mg-bbt-25 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mg-bbt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping Back
+Margin Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin Left: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-blf-0 to mgd-blf-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-blf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin right: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-brt-0 to mgp-brt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-brt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin top: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-btp-0 to mgp-btp-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-tp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>&nbsp;</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Back Margin bottom: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>mgp-bbt-0 to mgp-bbt-25 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mgp-bbt-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Height</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the height to it. We provide mapping in Pixel and percentage.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Height: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>ht-0
+to ht-100 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>ht-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Height: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>htp-0
+to htp-100 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>htp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Max
+Height Mapping Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Height: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>mht-0
+to mht-100 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mht-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Max
+Height Mapping Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Height: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>mhtp-0
+to mhtp-100 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mhtp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Width</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the width to it. We provide mapping in Pixel and percentage.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Width: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>wh-0
+to wh-100 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>wh-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Mapping
+Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Width: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>whp-0
+to whp-100 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>whp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Max Width
+Mapping Using Pixel</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Width: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>mwh-0
+to mwh-100 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mwh-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;line-height:115%'>Max Width
+Mapping Using Percentage</span></b></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Width: </span></b><span style='font-size:
+12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;color:#212529'> </span><span
+style='font-size:10.0pt;line-height:115%;font-family:Consolas;color:#D44950'>mwhp-0
+to mwhp-100 in percentage</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>mwhp-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoQuote>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Border</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the border to it.</span></p>
+
+<p class=MsoQuote><span style='font-size:11.5pt;line-height:115%;font-family:
+"Verdana",sans-serif;color:black;background:white'>The following classes are
+allowed:</span></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Border Width: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>bdr-0 to bdr-20 in pixels</span></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Border Color: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><strong><span style='font-family:"Calibri",sans-serif'>Class
+  Name</span></strong></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><strong><span style='font-family:"Calibri",sans-serif'>Color</span></strong></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><i><span style='font-size:10.0pt;
+  font-family:Consolas;color:#D44950'>bdrc-yellow</span></i></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='color:#00B050'>Yellow</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><i><span style='font-size:10.0pt;
+  font-family:Consolas;color:#D44950'>bdrc-red</span></i></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='color:#00B050'>Red</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-dot bdr-* bdrc-red</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-dash bdr-* bdrc-yellow</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-solid bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-double bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-grove bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-ridge bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-inset bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-outset bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-none bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-hide bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-mix bdr-*</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Border Outline</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the border outline to it.</span></p>
+
+<p class=MsoQuote><span style='font-size:11.5pt;line-height:115%;font-family:
+"Verdana",sans-serif;color:black;background:white'>The following classes are
+allowed:</span></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Border Width: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>bdr-0 to bdr-20 in pixels</span></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Outline Color: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:5.4pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><strong><span style='font-family:"Calibri",sans-serif'>Class
+  Name</span></strong></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><strong><span style='font-family:"Calibri",sans-serif'>Color</span></strong></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><i><span style='font-size:10.0pt;
+  font-family:Consolas;color:#D44950'>outlc-yellow</span></i></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='color:#00B050'>Yellow</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><i><span style='font-size:10.0pt;
+  font-family:Consolas;color:#D44950'>outlc-red</span></i></p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><span style='color:#00B050'>Red</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=171 valign=top style='width:128.1pt;border:solid black 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>&nbsp;</p>
+  </td>
+  <td width=143 valign=top style='width:107.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>bdr-dot bdr-* bdrc-red outl-solid outlc-red</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Fonts</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the font feature to it.</span></p>
+
+<p class=MsoQuote><span style='font-size:11.5pt;line-height:115%;font-family:
+"Verdana",sans-serif;color:black;background:white'>The following classes are
+allowed:</span></p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Font Size: </span></b><span
+style='font-size:12.0pt;line-height:115%;font-family:"Segoe UI",sans-serif;
+color:#212529'> </span><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>font-1 to font-45 in pixels</span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoQuote><b><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Fixed Font Size: </span></b></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='background:#F9F9F9;border-collapse:collapse;border:none'>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;background:#F2F2F2;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal align=center style='margin-top:12.0pt;margin-right:0cm;
+  margin-bottom:12.0pt;margin-left:0cm;text-align:center;line-height:normal'><b><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:black'>Font Type</span></b></p>
+  </td>
+  <td style='border:solid #AAAAAA 1.0pt;border-left:none;background:#F2F2F2;
+  padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal align=center style='margin-top:12.0pt;margin-right:0cm;
+  margin-bottom:12.0pt;margin-left:0cm;text-align:center;line-height:normal'><b><span
+  style='font-size:10.5pt;font-family:"Arial",sans-serif;color:black'>Font
+  Class</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;border-top:none;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>Extra Small Font</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>font-xs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;border-top:none;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>Small Font</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>font-sm</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;border-top:none;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>Middle Font Size</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>font-md</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;border-top:none;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>Large Font Size</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>font-lg</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #AAAAAA 1.0pt;border-top:none;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>Extra Large Font Size</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #AAAAAA 1.0pt;
+  border-right:solid #AAAAAA 1.0pt;padding:2.4pt 4.8pt 2.4pt 4.8pt'>
+  <p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+  12.0pt;margin-left:0cm;line-height:normal'><span style='font-size:10.5pt;
+  font-family:"Arial",sans-serif;color:black'>font-xlg</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-xs</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-sm</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-md</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-lg</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>font-xlg</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Text Decoration</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the text decoration to it.</span></p>
+
+<p class=MsoQuote><span style='font-size:11.5pt;line-height:115%;font-family:
+"Verdana",sans-serif;color:black;background:white'>The following classes are
+allowed:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>text-nodeco</span></i><i><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas;color:black'> </span></i><span class=nt><b><span
+style='font-size:10.5pt;line-height:115%;font-family:"Courier New";color:green'>–
+Text Decoration none</span></b></span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>text-decoul </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Text Decoration underline</span></b></span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>text-nodeco</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>text-decoul</span></i><span
+class=nt><b><span style='color:green'>&quot;</span></b></span><span
+style='font-size:10.5pt;color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:none;border-bottom:solid #4F81BD 1.0pt;padding:0cm 0cm 4.0pt 0cm'>
+
+<p class=MsoTitle>Overflow</p>
+
+</div>
+
+<p class=MsoQuote><span style='font-size:12.0pt;line-height:115%;font-family:
+"Segoe UI",sans-serif;color:#212529'>Add classes to an element to easily set
+the overflow property to it.</span></p>
+
+<p class=MsoQuote><span style='font-size:11.5pt;line-height:115%;font-family:
+"Verdana",sans-serif;color:black;background:white'>The following classes are
+allowed:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-visible</span></i><i><span style='font-size:10.0pt;
+line-height:115%;font-family:Consolas;color:black'> </span></i><span class=nt><b><span
+style='font-size:10.5pt;line-height:115%;font-family:"Courier New";color:green'>–
+Overflow Visible</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span class=nt><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><i><span style='font-size:10.0pt;line-height:115%;
+font-family:Consolas;color:#D44950'>ovf-hide </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Hide on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-scroll </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Scroll on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-auto </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Automatic select when overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-overlay </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Overlay on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-unset </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Unset overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-visible </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set X – Axis visible on
+overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-hide </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set X – Axis hide on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-scroll </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set X – Axis scroll on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-auto </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set X – Axis automatic select
+on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-overlay </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set X – Axis overlay on
+overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-x-unset </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– unset X – Axis on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-visible </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Y – Axis visible on
+overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-hide </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Y – Axis hide on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-scroll </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Y – Axis scroll on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-auto </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Y – Axis automatic select
+on overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-overlay </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– Set Y – Axis overlay on
+overflow</span></b></span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:10.0pt;line-height:115%;font-family:Symbol;color:#D44950'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:10.0pt;line-height:115%;font-family:
+Consolas;color:#D44950'>ovf-y-unset </span></i><span class=nt><b><span
+style='font-family:"Courier New";color:green'>– unset Y – Axis on overflow</span></b></span></p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>ovf-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>ovf-x-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<div style='border:solid #DDDDDD 1.0pt;padding:12.0pt 12.0pt 12.0pt 0cm;
+background:#F9F9F9'><pre style='margin-left:35.45pt;text-indent:-35.45pt;
+line-height:15.6pt;background:#F9F9F9;border:none;padding:0cm'><span
+style='font-size:10.5pt;color:black'>   &lt;div </span><span class=nt><b><span
+style='color:green'>c</span></b></span><span class=nt><b><span
+style='font-size:10.5pt;color:green'>la</span><span style='color:green'>ss=&quot;</span></b></span><i><span
+style='font-family:Consolas;color:#D44950'>ovf-y-*</span></i><span class=nt><b><span
+style='color:green'>&quot;</span></b></span><span style='font-size:10.5pt;
+color:black'>&gt;&lt;/div&gt;</span></pre></div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
