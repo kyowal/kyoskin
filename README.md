@@ -93,39 +93,43 @@ The following classes are allowed:
     Font Size:  font-1 to font-45 in pixels
 
 ### Fixed Font Size: 
-    Font Type	Font Class
-    Extra Small Font	font-xs
-    Small Font	font-sm
-    Middle Font Size	font-md
-    Large Font Size	font-lg
-    Extra Large Font Size	font-xlg
+Font Type	Font Class
+Extra Small Font	font-xs
+Small Font	font-sm
+Middle Font Size	font-md
+Large Font Size	font-lg
+Extra Large Font Size	font-xlg
 
 # Text Decoration
 Add classes to an element to easily set the text decoration to it.
 The following classes are allowed:
-text-nodeco – Text Decoration none
-text-decoul – Text Decoration underline
+| Class         | Object                |
+| ------------- | ---------------------|
+| text-nodeco  | Text Decoration none  |
+| text-decoul  | Text Decoration underline |
+
 
 # Overflow
 Add classes to an element to easily set the overflow property to it.
-The following classes are allowed:
-| Class | Object |
-| ------ | ------ |
-| ovf-visible | Overflow Visible |
-| ovf-hide | Set Hide on overflow |
-| ovf-scroll | Set Scroll on overflow |
-| ovf-auto | Automatic select when overflow |
-| ovf-overlay | Set Overlay on overflow |
-| ovf-unset | Unset overflow |
-| ovf-x-visible | Set X – Axis visible on overflow |
-| ovf-x-hide | Set X – Axis hide on overflow |
-| ovf-x-scroll | Set X – Axis scroll on overflow |
-| ovf-x-auto | Set X – Axis automatic select on overflow |
-| ovf-x-overlay | Set X – Axis overlay on overflow |
-| ovf-x-unset | unset X – Axis on overflow |
-| ovf-y-visible | Set Y – Axis visible on overflow |
-| ovf-y-hide | Set Y – Axis hide on overflow |
-| ovf-y-scroll | Set Y – Axis scroll on overflow |
-| ovf-y-auto | Set Y – Axis automatic select on overflow |
-| ovf-y-overlay | Set Y – Axis overlay on overflow |
-| ovf-y-unset | unset Y – Axis on overflow |
+###The following classes are allowed:
+
+    |       Class               |       Object              |
+    | ------------------------- | ------------------------- |
+    | ovf-visible | Overflow Visible |
+    | ovf-hide | Set Hide on overflow |
+    | ovf-scroll | Set Scroll on overflow |
+    | ovf-auto | Automatic select when overflow |
+    | ovf-overlay | Set Overlay on overflow |
+    | ovf-unset | Unset overflow |
+    | ovf-x-visible | Set X – Axis visible on overflow |
+    | ovf-x-hide | Set X – Axis hide on overflow |
+    | ovf-x-scroll | Set X – Axis scroll on overflow |
+    | ovf-x-auto | Set X – Axis automatic select on overflow |
+    | ovf-x-overlay | Set X – Axis overlay on overflow |
+    | ovf-x-unset | unset X – Axis on overflow |
+    | ovf-y-visible | Set Y – Axis visible on overflow |
+    | ovf-y-hide | Set Y – Axis hide on overflow |
+    | ovf-y-scroll | Set Y – Axis scroll on overflow |
+    | ovf-y-auto | Set Y – Axis automatic select on overflow |
+    | ovf-y-overlay | Set Y – Axis overlay on overflow |
+    | ovf-y-unset | unset Y – Axis on overflow |
